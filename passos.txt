@@ -1,0 +1,41 @@
+iniciar o npm:
+
+npm init --yes
+
+-------------
+
+instalar o parcel:
+
+npm install --save-dev parcel
+
+--------------
+
+criar estrutura de pastas:
+src > index.html // styles > main.scss // 
+scripts > main.js
+
+--------------
+
+package.json adicionar script 
+"dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+
+--------------
+
+npm run dev
+
+--------------
+
+não utilizaremos liveserver-> tem o só abrir o localhost:1234
+
+--------------
+
+configurar a minificacao de imagens
+
+criar arquivo na raiz:
+sharp.config.json
+
+{
+    "png": {
+        "quality": 75
+    }
+}
